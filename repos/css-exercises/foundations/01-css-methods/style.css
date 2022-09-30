@@ -1,0 +1,19 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+div {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  text-align: center;
+  /* margin: .25em; */
+  /* padding: .25em; */
+}
+
