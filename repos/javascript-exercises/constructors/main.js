@@ -1,4 +1,4 @@
-function Hobbit(title, author, pages, status) {
+function Book(title, author, pages, status) {
   this.title = title;
   this.author = author;
   this.pages = pages;
@@ -9,11 +9,11 @@ function Hobbit(title, author, pages, status) {
   };
 }
 
-const newHobbit = new Hobbit(
+const newBook = new Book(
   'Down and Out in Paris and London',
   'George Orwell',
   276,
   'not read yet',
 );
 
-console.log(newHobbit.info()); // "The Hobbit by J.R.R. Tolkien, 295 pages, not read yet"
+console.log(newBook.info()); // "The Hobbit by J.R.R. Tolkien, 295 pages, not read yet"
