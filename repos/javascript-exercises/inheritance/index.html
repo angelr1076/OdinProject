@@ -53,24 +53,42 @@
     //     alert(admin.fullName); // Alice Cooper, state of admin modified
     //     alert(user.fullName); // John Smith, state of user protected
 
-      const myObject = {
-          // helloMethod is a method
-          helloMethod: function () {
-            console.log(this === myObject); // => true
+      // const myObject = {
+      //     // helloMethod is a method
+      //     helloMethod: function () {
+      //       console.log(this === myObject); // => true
 
-            let thisMethod = () => {
-              console.log(this === myObject);
-            }
+      //       let thisMethod = () => {
+      //         console.log(this === myObject);
+      //       }
 
-            // function thisMethod () {
-            //   console.log(this === myObject);
-            // }
+      //       // function thisMethod () {
+      //       //   console.log(this === myObject);
+      //       // }
 
-            return thisMethod();
-          }
-      };
+      //       return thisMethod();
+      //     }
+      // };
 
-      const message = myObject.helloMethod();
+      // const message = myObject.helloMethod();
+// 👍 Make sure to use new operator in cases when a constructor call is expected:
+
+  // function Vehicle(type, wheelsCount) {
+  //   if (!(this instanceof Vehicle)) {
+  //     throw Error('Error: Incorrect invocation');
+  //   }
+  //   this.type = type;
+  //   this.wheelsCount = wheelsCount;
+  //   return this;
+  // }
+  // // Constructor invocation
+  // const car = new Vehicle('Car', 4);
+  // car.type               // => 'Car'
+  // car.wheelsCount        // => 4
+  // car instanceof Vehicle // => true
+  // // Function invocation. Throws an error.
+  // const brokenCar = Vehicle('Broken Car', 3);
+
 
 
   </script>
